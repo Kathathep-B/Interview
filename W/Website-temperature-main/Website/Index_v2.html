@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website recorded temperature</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<style>
+  form{
+    background-color: royalblue;
+  }
+</style>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <header>
+    <nav><ul>
+            <li><a href="Index_v2.html">Home</a></li>
+            <li><a href="Index_v2.html">Weekly</a></li>
+            <li><a href="Index_v2.html">Monthly</a></li>
+            <li><a href="Index_v2.html">Add-data</a></li>
+   </ul></nav>
+
+</header>
+
+  <div class="container">
+    <p></p>
+    <a href="Index.html" class="btn btn-outline-secondary" role="button">Graph</a>
+    <a href="Table.html" class="btn btn-outline-secondary" role="button">Table</a>
+    <a href="Record.html" class="btn btn-outline-secondary" role="button">RecordGraph</a>
+    
+    <div id="chart_main" style="width: 100%; height: 400px; margin-right:10px;  margin-left:10px;  margin-top: 30px; "></div>
+</div>
+<script src="./script/main_chart.js"></script>
+</div>
+</body>
+</html>

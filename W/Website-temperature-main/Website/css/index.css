@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(112,71,235,1);
+}
+ul{
+    width: auto;
+    float: left;
+    margin-top: 8px;
+}
+li{
+    display: inline-block;
+    padding: 5px 40px;
+}
+a{
+    text-align: center;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 40px;
+}
+a:hover{
+    color: #DADADA;
+    transition: 0.5s;
+}
+h1{
+    text-align: center;
+    background: #987DE8;
+    color: #fff;
+    font-size: 40px;
+}

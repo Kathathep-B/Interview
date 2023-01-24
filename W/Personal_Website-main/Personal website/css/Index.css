@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+main{ 
+    display: grid;
+    grid-template-columns: 50% 50% ; /*responsive design*/
+    margin-top: 20px;
+}
+
+article{
+    display: grid;
+    grid-template-rows:50%;
+    height: 600px;
+}
+
+#box1{
+    background: lightcyan;
+    border-radius: 20px;
+    width: 80%;
+    height: 500px;
+    margin-left: 10px;
+}
+
+img{
+    width: 80%;
+    height: 490px;
+    margin-left: 40px;
+}
+
+#box2{
+    background: lightcyan;
+    border-radius: 20px;
+    width: 99%;
+    height: 500px;
+}
+
+#p{
+    margin: 5px 0px 0px 10px;
+    font-size: xx-large;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:1000px) { /*responsive design*/
+    main{ 
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+}

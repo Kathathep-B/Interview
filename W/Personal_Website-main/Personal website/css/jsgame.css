@@ -1,0 +1,31 @@
+canvas{
+    box-shadow: black 20px 10px 50px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1{
+    margin: 30px 0 0 0;
+    color: white;
+    font-weight: 500;
+    font-size: xx-large;
+}
+#p2{
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    font-size: xx-large;
+}
+#p3{
+    color: white;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+footer{
+ margin-top: 100px;
+}

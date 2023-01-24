@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website recorded temperature</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<style>
+  body {
+    background-color: rgb(255, 255, 255 );
+}
+center{
+  background-color: #DFEAF5;
+}
+h2{
+  text-align: center;
+  background-color:  #987DE8;
+}
+nav{
+    background-color: #7047EB;
+  }
+</style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <button class="btn-hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Weekly.html">Weekly</a></li>
+      <li><a href="Monthly.html">Monthly</a></li>
+      <li><a href="Add_data.html">Add-data</a></li>
+    </ul>
+  </nav>
+
+
+  <h2>ADD_DATA</h2>
+  <p></p>
+<div class="container"> 
+  <center>
+    <div class="mb-4 row">
+      <label for="staticEmail" class="col-sm-2 col-form-label"><h3>Sensor</h3></label>
+      <div class="col-sm-5">
+        <div class="input-group mb-3">
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Select sensor</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputtemp" class="col-sm-2 col-form-label"><h3>Temperature</h3></label>
+      <div class="col-sm-5">
+        <input type="number" class="form-control" id="inputPassword">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label"><h3>Date&Time</h3></label>
+      <div class="col-sm-5">
+        <input type="datetime" class="form-control" id="inputPassword">
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-secondary">ADD</button> 
+  </center>
+</div>
+</body>
+</html>

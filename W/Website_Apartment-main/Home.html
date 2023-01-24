@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Home_page</title>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#9FCDFB;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:#F8F9F9;
+  color:#52A6FB;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+* {
+	  box-sizing: border-box;
+	}
+	
+	/* Create two equal columns that floats next to each other */
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 10px;
+	  height: 300px; /* Should be removed. Only for demonstration */
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	}
+</style>
+</head>
+<body>
+    <!-- Navbar !-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #157dec;" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Home.html">
+    <img src="Brand/KMITL_BRAND.png" width="150" height="50" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="Index.html" method="post">
+    
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+  </form>
+</div>
+ </div>
+</nav>
+  <!-- End-Navbar !-->
+  
+  <!-- Content !-->
+  
+<div class="row">
+  <div class="column">
+    <img src="Index_images/Build.jpg" width="400" height="300" />
+  </div>
+  <div class="column">
+    <p>&nbsp;  </p>
+    <h3 style="color:#FFF">เปิดประสบการณ์</h3>
+    <h5 #000>หอพักที่ดีที่สุดในลาดกระบังสำหรับนักศึกษา</h5>
+    <p#000>ห้องพักที่เพรียบพร้อมด้วยสิ่งอำนวยความสะดวก ปลอดภัย ราคานักศึกษา 
+    <p>อยู่ใกล้สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+    
+  </div>
+</div>
+
+<div align="center"><img src="Information_images/Room.jpg">
+  <a class="btn btn-outline-primary" href="Room_information.html" role="button">View</a>
+  
+  <!-- Endcontent !-->
+  
+  
+  <!-- Optional JavaScript; choose one of the two! -->
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+
+</body>
+</html>
